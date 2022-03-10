@@ -1,0 +1,14 @@
+div.ILC{
+    background-color: grey;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    bottom: 390px;
+    text-align: center;
+}
+
+div.mapProd{
+    position: relative;
+    top: 85px;
+    left: -22px;
+}
