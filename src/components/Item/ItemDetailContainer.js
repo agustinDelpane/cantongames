@@ -21,7 +21,8 @@ getItem.then(
 function ItemListContainer () {
     return (
         <ItemDetail />
-    )    
+    )
+    
 }
 
 

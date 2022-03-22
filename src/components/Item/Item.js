@@ -1,7 +1,7 @@
 import React from 'react';
 import './../ItemListContainer.css'
 
-const productos = [
+export const productos = [
     { id: '1', nombre: 'DayZ', precio: '2000', img: <img src={require('./images/dayz.png')} className='dayzPng' alt='DayZ' /> },
     { id: '2', nombre: 'Mass Effect Legendary Edition', precio: '3500', img: <img src={require('./images/me.png')} className='mePng' alt='Mass Effect LE' /> },
     { id: '3', nombre: 'Star Wars Battlefront 2', precio: '800', img: <img src={require('./images/swb2.png')} className='swbPng' alt='Star Wars Battlefront 2' /> },
@@ -12,28 +12,7 @@ const productos = [
     { id: '8', nombre: 'Age Of Empires 3', precio: '600', img: <img src={require('./images/aoe3.png')} className='aoe3Png' alt='Age Of Empires 3' /> }
 ]
 
-        const task = new Promise ((resolve, rejected) => {
-            let url = productos;
-            if (url === productos) {
-                setTimeout (() => {
-                    resolve(productos);
-                }, 2000);
-            } else {
-                rejected('400 incorrecto');
-            }
-        });
-        task.then(
-            (response) => console.log(response),
-            (error) => console.log(error)
-        )
-
-
-function Item () {
-    return (
-        <div className='mapProd'>
-            { productos.map(prod => <ul className='mapProd'> {prod.img } <br /> {prod.nombre} </ul>)   }
-        </div>
-    )
+export default {
+    productos,
 }
 
-export default Item

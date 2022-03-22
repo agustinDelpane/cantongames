@@ -1,36 +1,24 @@
-li {
-    float: left;
-  }
-  
-  a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-  }
-
-h1.nav {
-  font-size: 32px;
-  position: relative;
-  left: -425px;
+a.CGT{
+  font-size: 32px
 }
-
-ul.nav {
-  list-style-type: none;
-  position: absolute;
-  top: 12px;
-  left: 380px;
+a.OFN{
+  font-size: 20px;
+}
+div.CAT{
+  font-size: 20px;
+}
+a.CON{
+  font-size: 20px;
 }
 
 img.cartPng{
-  width: 2%;
-  position: absolute;
-  top: 29px;
-  left: 1020px;
+  width: 4%;
+  position: relative;
+  left: -40px;
 }
 
 img.accountPng{
-  width: 2%;
-  position: absolute;
-  top: 29px;
-  left: 1078px;
+  width: 4%;
+  position: relative;
+  left: -17px;
 }
