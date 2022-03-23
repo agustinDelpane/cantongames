@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TituloGreet from './Greet/Titulo'
 import './input/input'
-import { productos } from './Item/Item.js'
+import { data } from './getFetch/data.js'
 import ItemCount from './ItemCount/ItemCount.js'
 import ItemDetailContainer from './Item/ItemDetailContainer'
-import { Card, Button }  from 'react-bootstrap'
+import ItemList from './Item/ItemList'
 
 const titulo='Bienvenido a Canton Games!';
 
-const onAdd = (cantidad) => {
+/*const onAdd = (cantidad) => {
   console.log (cantidad)
 }
 
@@ -25,7 +25,7 @@ const task = new Promise ((resolve, rejected) => {
 task.then(
   (response) => console.log(response),
   (error) => console.log(error)
-)
+)*/
 
 // <ItemCount initial={ 1 } stock={ 10 } onAdd={ onAdd } />
 // <ItemDetailContainer />
@@ -33,28 +33,23 @@ task.then(
 // <Card.Img variant="top" src= { prod.img}  alt='Imagen del juego' />
 
 function ItemListContainer() {
+
+  const [Productos, setProductos] = useState ([])
+
+  useEffect(() => {
+    data
+      .then((respuesta) => setProductos(respuesta))
+      .catch(err => console.log(err))
+      .finally(() => console.log('Loading'))
+  })
+
   return ( 
     <>
     <div className='ILC'>
     <TituloGreet titulo={ titulo } saludo={() => console.log('Saludos, internauta!')  } />
     </div>
 
-    <div className='mapProd'>
-  { productos.map(prod => <Card style={{ width: '18rem' }}>
-
-  <Card.Body>
-    <Card.Title> { prod.nombre } </Card.Title>
-    <div className='imgCard'>
-      <img src={ prod.img } alt='Imagen del juego'></img>
-    </div>
-    <Card.Text>
-      { prod.precio }
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-  </Card>)
-  }
-</div>
+    <ItemList Productos = {Productos} />
 </>
   )
 }
