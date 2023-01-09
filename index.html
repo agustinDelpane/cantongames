@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="assets/img/logo.png" alt="Logo" class="logoNav">
+        <ul class="nav justify-content-end navIdx">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#/pagina1" style="color: white;">Información</a>
+            </li>
+        </ul>
+    </nav>
+    <h3 class="preciosIdx">
+        Todos los precios incluyen IVA. Compre con seguridad y tranquilidad!
+    </h3>
+    </p>
+    <div class="parallax">
+        <div class="container">
+            <div class="row">
+                <main id="items" class="col-sm-8 row"></main>
+                <aside class="col-sm-4 carritoIdx">
+                    <h2>Carrito</h2>
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <p class="text-right">Total: <span id="total"></span>&dollar;;</p>
+                    <input type="button" value="Comprar" class="btn btn-success" onclick="window.open('../assets/img/pago.PNG','_blank')">
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img src="assets/img/logo.png" alt="Logo" class="logoFoot">
+        <p class="footerP">
+            Wallmaster Games es propiedad de<br>
+            Agustín Delpane. Todos los derechos<br>
+            reservados<br>
+        </p>
+        <p class="segen">
+            Seguinos en:
+        </p>
+        <section class="rrss">
+            <img src="assets/img/fb40x40.png" alt="Logo Facebook"> <br>
+            <img src="assets/img/ig40x40.png" alt="Logo Instagram">
+        </section>
+        <br>
+        <a href="#barraNav">Ir a la Nav</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

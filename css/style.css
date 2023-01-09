@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    background-image: url("../assets/img/bckgrnd.jpg");
+    height: 200%;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+nav.navIdx{
+    position: relative;
+    top: -140px;
+}
+
+ul.navIdx{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 66%, rgba(2,112,134,1) 100%);
+}
+
+body{
+    background-color: rgb(9, 9, 121);
+}
+
+h4.DGh4{
+    position: relative;
+    top: 192px;
+    left: 150px;
+}
+b.DGb{
+    position: relative;
+    top: 192px;
+    left: 230px;
+}
+#btnDG{
+    position: relative;
+    top: 226px;
+    left: 166px;
+}
+
+.carritoIdx{
+    background-color: white;
+}
+h3.preciosIdx{
+    color: white;
+    position: absolute;
+    top: 195px;
+    left: 460px;
+}
+img.logoNav{
+    position: absolute;
+    top: 3px;
+    left: 33px;
+    z-index: 3;
+}
+footer.footer{
+    background: rgb(74,71,117);
+    background: radial-gradient(circle, rgba(74,71,117,1) 0%, rgba(139,139,168,1) 50%, rgba(196,206,208,1) 100%);
+}
+img.logoFoot {
+    position: absolute;
+    top: 2180px;
+    left: 18px;
+}
+p.footerP {
+    position: relative;
+    top:  32px;
+    bottom: 50px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+p.segen {
+    position: absolute;
+    top: 2224px;
+    bottom: 50px;
+    left: 1618px;
+    right: 0px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+section.rrss {
+    position: absolute;
+    top: 2198px;
+    bottom: 50px;
+    left: 1768px;
+    right: 0px;
+}
